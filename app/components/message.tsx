@@ -40,7 +40,7 @@ export const Message: React.FC<Props> = ({ text }) => {
         width={80}
       />
       <img
-        className="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/2"
+        className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/2"
         src={kirbyChef}
         alt="Chef Kirby."
         width={80}
