@@ -50,7 +50,7 @@ export default function MessagePage() {
       )}
 
       <Link to="/" className="mt-10">
-        <Button text="Send One Back" onClick={() => {}}></Button>
+        <Button text="Send One Back"></Button>
       </Link>
     </>
   );

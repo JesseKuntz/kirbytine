@@ -19,7 +19,10 @@ export const Message: React.FC<Props> = ({ text }) => {
           <Button
             onClick={() => {
               setOpen(true);
-              window.EmojiSprinkle.sprinkleEmojis({ emoji: "❤️" });
+              window.EmojiSprinkle.sprinkleEmojis({
+                emoji: "❤️",
+                fontSize: 30,
+              });
             }}
             text="Open ❤️"
           />
@@ -29,7 +32,7 @@ export const Message: React.FC<Props> = ({ text }) => {
   }
 
   return (
-    <Card className="p-8 relative animate-fade-in">
+    <Card className="p-8 relative animate-fade-in break-words">
       <img
         className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/2"
         src={kirbySleepy}
