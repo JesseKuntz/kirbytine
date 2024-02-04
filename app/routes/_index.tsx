@@ -62,7 +62,9 @@ export default function IndexPage() {
       <>
         <Card className="p-4">
           {"Send this link to whoever you'd like to send your Kirbytine to: "}
-          <div className="my-4 py-2 px-4 bg-secondary rounded">{link}</div>
+          <div className="my-4 py-2 px-4 bg-secondary rounded break-words">
+            {link}
+          </div>
           <div>
             <Button
               text="Copy Link"

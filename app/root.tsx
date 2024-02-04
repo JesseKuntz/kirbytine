@@ -36,7 +36,7 @@ export default function App() {
           rel="stylesheet"
         />
       </head>
-      <body className="bg-secondary p-10 flex flex-col items-center text-2xl">
+      <body className="bg-secondary p-4 sm:p-10 flex flex-col items-center text-2xl">
         <div className="flex items-center gap-6 flex-wrap justify-center">
           <img
             src={kirbyHeart}
