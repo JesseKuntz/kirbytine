@@ -8,6 +8,8 @@ import { RemixBrowser } from "@remix-run/react";
 import { startTransition, StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
 
+import "emoji-sprinkle/window";
+
 startTransition(() => {
   hydrateRoot(
     document,
