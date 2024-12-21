@@ -92,28 +92,41 @@ export default function IndexPage() {
   }
 
   return (
-    <Form method="post" className="flex flex-col">
-      <Card className="p-4">
-        Type your message here:
-        <textarea
-          name="message"
-          className="mt-4 p-2 bg-secondary rounded-lg border-white border-2 min-h-32 w-full"
-          onChange={(event) => setCurrentMessage(event.target.value)}
-        />
-        <p className="text-right">{currentMessage.length}/1000</p>
-        <div className="mt-4">
-          <Button
-            text={isSubmitting ? "Creating Kirbytine..." : "Get Link"}
-            type="submit"
-            disabled={
-              isSubmitting ||
-              currentMessage.length === 0 ||
-              currentMessage.length > 1000
-            }
+    <>
+      <Form method="post" className="flex flex-col">
+        <Card className="p-4">
+          Type your message here:
+          <textarea
+            name="message"
+            className="mt-4 p-2 bg-secondary rounded-lg border-white border-2 min-h-32 w-full"
+            onChange={(event) => setCurrentMessage(event.target.value)}
           />
-        </div>
-      </Card>
-    </Form>
+          <p className="text-right">{currentMessage.length}/1000</p>
+          <div className="mt-4">
+            <Button
+              text={isSubmitting ? "Creating Kirbytine..." : "Get Link"}
+              type="submit"
+              disabled={
+                isSubmitting ||
+                currentMessage.length === 0 ||
+                currentMessage.length > 1000
+              }
+            />
+          </div>
+        </Card>
+      </Form>
+      <div className="mt-8 flex justify-center">
+        Made with 💖 by
+        <a
+          href="https://jessekuntz.github.io/"
+          target="_blank"
+          className="ml-2 mt-auto underline hover:no-underline"
+          rel="noreferrer"
+        >
+          Jesse Kuntz
+        </a>
+      </div>
+    </>
   );
 }
 
