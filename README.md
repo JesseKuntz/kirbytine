@@ -1,38 +1,28 @@
-# Welcome to Remix!
+<p align="center">
+  <a href="https://kirbytine.vercel.app/">
+    <img alt="Kirbytine Logo" src="./app/images/banner-logo.png" width="300" />
+  </a>
+</p>
+<h1 align="center">
+  Kirbytine
+</h1>
 
-- [Remix Docs](https://remix.run/docs)
+### [👉 Full Project Description 👈](https://jessekuntz.github.io/kirbytine.html)
 
-## Development
+## Running Things
 
-From your terminal:
+```bash
+# install dependencies
+pnpm install
 
-```sh
-npm run dev
+# run the app in development mode
+pnpm dev
+
+# build for production
+pnpm build
+
+# test the production build locally
+pnpm start
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
